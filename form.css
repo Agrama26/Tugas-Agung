@@ -2,25 +2,13 @@
     box-sizing: border-box;
 }
 
-input[type=number]{
-    width: 100%;
-    border: 2px solid rgb(73, 214, 233);
-    padding: 6px 10px;
-    margin: 5px 0;
-    border-radius: 4px;
-}
-
-input[type=number]:focus{
-    background-color: lightblue;
-}
-
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
 
 input[type=text]{
-    width: 100%;
+    width: 80%;
     border: 2px solid rgb(73, 214, 233);
     padding: 6px 10px;
     margin: 5px 0;
@@ -28,15 +16,15 @@ input[type=text]{
 }
 
 input[type=text]:focus{
-    background-color: lightblue;
+    background-color: rgb(73, 214, 233);
 }
 
 textarea:focus{
-    background-color: lightblue;
+    background-color: rgb(73, 214, 233);
 }
 
 textarea{
-    width: 100%;
+    width: 80%;
     padding: 10px 15px;
     margin: 5px 0;
     box-sizing: border-box;
@@ -44,17 +32,8 @@ textarea{
     border-radius: 4px;
 }
 
-p{
-    width: 100%;
-    padding: 5px 10px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    border: 2px solid rgb(73, 214, 233);
-    border-radius: 4px ;
-}
-
 input[type=submit]{
-    width: 7%;
+    width: 100%;
     padding: 5px 10px;
     margin: 5px 0;
     box-sizing: border-box;
@@ -68,25 +47,26 @@ input[type=submit]:hover {
     background-color: rgb(73, 214, 233);
 }
 
-.wadah {
+.container {
     border-radius: 5px;
-    background-color: #ccc;
+    background-color: black;
     padding: 20px;
 }
 
 .uku-10{
     float: left;
-    width: 10%;
+    width: 20%;
     margin-top: 6px;
+    font-weight: bold;
 }
 
 .uku-90 {
-    float: left;
-    width: 90%;
+    float: right;
+    width: 80%;
     margin-top: 6px;
 }
 
-.row:after {
+.baris:after {
     content: "";
     display: table;
     clear: both;

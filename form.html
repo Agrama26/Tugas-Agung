@@ -3,70 +3,101 @@
     <head>
         <meta charset="utf-8">
         <title>Data Anggota</title>
+        <link rel="stylesheet" href="perpus_ars.css">
         <link rel="stylesheet" href="form.css">
         <style>
-           body{
-            font-family: 'Times New Roman', Times, serif;
-            color: rgb(5, 2, 7);
-           }
+    
         </style>
-        <script src="form.js"></script>
+        <script src="js/form.js"></script>
     </head>
     <body>
-       <h2>Input Data Anggota</h2>
-       <br>
-       <p><b>Input Data Anggota</b></p>
-       <div class="wadah">
-        <form method="post" action="" name="anggota" onsubmit="return cekform()">
-            <div class="row">
-                <div class="uku-10">
-                    <label for="idagt">ID Anggota</label>
-                </div>
-                <div class="uku-90">
-                    <input type="text" id="idagt" name="idagt" placeholder="ID Loo..">
-                </div>
+        <div class="container"> 
+            <header>
+                <!-- <img src="F:\Data Pribadi\Pictures\Buku.png" width="100px" height="100px" alt="404"> -->
+                <h2>PERPUSTAKAAN UMUM</h2>
+                <h5>Jl.Pelabuhan No 7 Telp: (+62)89653277568</h5>
+            </header>
+            <div class="hai">
+                <p><b>Hai Admin</b></p>
             </div>
-            <div class="row">
-                <div class="uku-10">
-                    <label for="txtnama">Nama</label>
+            <div class="main">
+                <div class="left">
+                    <ul>
+                        <br>
+                        <li><a href="index.html">Beranda</a></li>
+                    </ul><br>
+                        <b>Entry Data Dan</b>  
+                        <b>Transaksi</b> 
+                    <ul>
+                        <br>
+                        <li><a href="form.html">Data Anggota</a></li>
+                        <li><a href="data_buku.html">Data Buku</a></li>
+                        <li><a href="data_transaksi.html">Transaksi Peminjaman</a></li>
+                    </ul><br>
+                        <b>Laporan</b>
+                    <ul>
+                        <br>
+                        <li><a href="#">Lap Data Anggota</a></li>
+                        <li><a href="#">Lap Data Buku</a></li>
+                    </ul>
                 </div>
-                <div class="uku-90">
-                    <input type="text" id="txtnama" name="txtnama" placeholder="Nama Loo..">
-                </div>
-            </div>
-            <div class="row">
-                <div class="uku-10">
-                    <label for="jkel">Jenis Kelamin</label>
-                </div>
-                <div class="uku-90">
-                    <input type="radio" id="jkel" name="jkel" value="P">Pria &nbsp;&nbsp;
-                </div>
-            </div>
-            <div class="row">
-                <div class="uku-10">
-                    <label for="jkel">  </label>
-                </div>
-                <div class="uku-90">
-                    <input type="radio" id="jkel" name="jkel" value="W">Wanita &nbsp;&nbsp;
-                </div>
-            </div>
-            <div class="row">
-                <div class="uku-10">
-                    <label for="alamat">Alamat</label>
-                </div>
-                <div class="uku-90">
-                    <textarea id="alamat" name="alamat" placeholder="Alamat Loo.."></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="uku-10">
-                    <label for="btn"> </label>
-                </div>
-                <div class="uku-90">
-                    <input type="submit" name="btn" value="Simpan">
-                </div>
-            </div>
-        </form>    
+                <article>
+                    <form method="post" action="" name="anggota" onsubmit="return cekform()">
+                        <div class="baris">
+                            <div class="uku-10">
+                                <label for="idagt">ID Anggota</label>
+                            </div>
+                            <div class="uku-90">
+                                <input type="text" id="idagt" name="idagt" placeholder="ID Loo..">
+                            </div>
+                        </div>
+                        <div class="baris">
+                            <div class="uku-10">
+                                <label for="txtnama">Nama</label>
+                            </div>
+                            <div class="uku-90">
+                                <input type="text" id="txtnama" name="txtnama" placeholder="Nama Loo..">
+                            </div>
+                        </div>
+                        <div class="baris">
+                            <div class="uku-10">
+                                <label for="jkel">Jenis Kelamin</label>
+                            </div>
+                            <div class="uku-90">
+                                <input type="radio" id="jkel" name="jkel" value="P">Pria &nbsp;&nbsp;
+                            </div>
+                        </div>
+                        <div class="baris">
+                            <div class="uku-10">
+                                <label for="jkel">  </label>
+                            </div>
+                            <div class="uku-90">
+                                <input type="radio" id="jkel" name="jkel" value="W">Wanita &nbsp;&nbsp;
+                            </div>
+                        </div>
+                        <div class="baris">
+                            <div class="uku-10">
+                                <label for="alamat">Alamat</label>
+                            </div>
+                            <div class="uku-90">
+                                <textarea id="alamat" name="alamat" placeholder="Alamat Loo.."></textarea>
+                            </div>
+                        </div>
+                        <div class="Save">
+                            <a href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <input type="submit" name="btn" value="Save">
+                            </a>
+                        </div>
+                    </form>
+                </article>
+                <!-- <footer>
+                    <h3>Silahkan Membaca</h3>
+                </footer> -->
+            </div>    
        </div>
     </body>
 </html>

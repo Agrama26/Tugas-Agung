@@ -1,17 +1,23 @@
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 #container {
-    background-color: black;
+    position: relative;
     box-sizing: border-box;
-}
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgb(5, 5, 5);
+    padding: 20px;
+    margin-bottom: 0;
+    }
 
 body {
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: azure;
+    background-color: black;
 }
 
 header {
@@ -19,11 +25,13 @@ header {
     border-radius: 10px 10px 0px 0px ;
     padding: 30px 30px 30px 30px;
     background-color: purple;
+    border: 2px solid white;
 }
 
 h2 {
     text-align : center;
     color: white;
+    padding-bottom: 10px;
 }
 
 h5 {
@@ -33,7 +41,10 @@ h5 {
 
 .hai {
     background-color: black;
-    padding: 15px 30px 15px 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
     color: white;
     margin: 0px 10px 0px 10px;
     border-radius: 0px;
@@ -41,9 +52,9 @@ h5 {
 
 .left {
     float: left;
-    width: 17%;
-    height: 510px; 
-    background: purple;
+    width: 20%;
+    height: 490px; 
+    background: black;
     margin: 0px 10px 0px 10px;
     border-radius: 0px 0px 0px 10px;
 }
@@ -53,7 +64,7 @@ h5 {
     display: flex;
     color: white;
     background-color: black;
-    padding-left: 32px;
+    padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
@@ -62,23 +73,30 @@ h5 {
 .left a {
     box-sizing: border-box;
     display: flex;
-    color: white;
+    color: rgb(241, 245, 245);
     background-color: purple;
-    padding-left: 32px;
+    padding-left: 30px;
     padding-bottom: 10px;
     padding-top: 10px;
     text-decoration: none;
     text-shadow: black;
+    font-weight: bold;
+    border: 2px solid white;
 }
 
 article {
     color: white;
+    clear: right;
     float: left;
-    width: 78%;
+    width: 77.5%;
     background-color: black;
     height: 470px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
     border-radius: 0px 0px 10px 0px;
+    border: 2px solid white;
 }
 
 article h3 {
@@ -86,7 +104,6 @@ article h3 {
     padding: 5px 10px;
     margin: 5px 0;
     box-sizing: border-box;
-    border: 2px solid white;
     border-radius: 4px ;
 }
 
@@ -99,7 +116,6 @@ article h1 {
 article p {
     color: white;
     text-align: center;
-    
 }
 
 footer {
@@ -107,4 +123,213 @@ footer {
     padding: 10px;
     text-align: center;
     color: red;
+}
+
+.row::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+input[type=text] {
+    width: 80%;
+    border: 2px solid rgb(0, 217, 255);
+    padding: 6px 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+input[type=text]:focus{
+    background-color: rgb(66, 237, 243);
+}
+
+input[type=date] {
+    width: 100%;
+    border: 2px solid rgb(0, 217, 255);
+    padding: 6px 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+input[type=date]:focus{
+    background-color: rgb(66, 237, 243);
+}
+
+nav b a {
+    box-sizing: border-box;
+    background-color: purple;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: azure;
+    border-radius: 5px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=text]{
+    width: 100%;
+    border: 2px solid rgb(73, 214, 233);
+    padding: 6px 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.size-10 {
+    width: 20%;
+    float: left;
+    color: white;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.size-90 {
+    width: 50%;
+    float: right;
+    margin-top: 6px;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(73, 214, 233);
+}
+
+.left a:hover {
+    background-color: rgb(73, 214, 233);
+}
+
+input[type=submit]{
+    background-color: black;
+    color: #03e9f4;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(73, 214, 233);
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px 15px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(73, 214, 233);
+    border-radius: 4px;
+}
+
+textarea:focus{
+    background-color: rgb(73, 214, 233);
+}
+
+
+
+.Save a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+.Save input:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+
+.Save a span {
+    position: absolute;
+    display: block;
+}
+
+
+.Save a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+    50%,100% {
+        left: 100%;
+    }
+}
+
+.Save a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(100deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+    50%,100% {
+        top: 100%;
+    }
+}
+
+.Save a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+    50%,100% {
+        right: 100px;
+    }
+}
+
+.Save a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,100% {
+        bottom: 100px;
+    }
 }
